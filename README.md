@@ -1,48 +1,23 @@
-## ts-starter
+## @peterroe/utils
 
-A typescript template
+utils for conding
 
-## Try it now!
+### debug
 
-```bash
-$ pnpm create un
-# or
-$ pnpm create un [my-project] -t ts-starter
+```ts
+import { debug } from '@peterroe/utils'
+
+const mode = process.env.NODE_ENV === 'production'
+
+const log = debug(mode)
+
+declare function log(desc: string, content: any, depth: number | null = null)
 ```
 
-Init git hook(optional)
+### random
 
-```shell
-$ pnpm git-hook-init
-```
+```ts
+import { random } from '@peterroe/utils'
 
-## Development
-
-Run `src/index.ts`
-
-```shell
-$ pnpm start
-```
-
-## Test
-
-```bash
-$ pnpm test
-```
-
-## Build
-
-Build your lib through `unbuild`
-
-```shell
-$ pnpm build
-```
-
-## Publish
-
-Publish your library to npm：
-
-```shell
-$ pnpm release
-$ npm publish
+declare function random(length: number)
 ```
