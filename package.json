@@ -42,7 +42,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "0.35.2",
     "@types/node": "^18.15.11",
-    "bumpp": "8.2.1",
+    "bumpp": "9.4.0",
     "eslint": "8.34.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
